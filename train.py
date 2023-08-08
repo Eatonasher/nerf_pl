@@ -20,9 +20,9 @@ from losses import loss_dict
 from metrics import *
 
 # pytorch-lightning
-from pytorch_lightning.callbacks import ModelCheckpoint
-from pytorch_lightning import LightningModule, Trainer
-from pytorch_lightning.logging import TestTubeLogger
+from lightning.callbacks import ModelCheckpoint
+from lightning import LightningModule, Trainer
+from lightning.logging import TestTubeLogger
 
 class NeRFSystem(LightningModule):
     def __init__(self, hparams):
